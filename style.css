@@ -1,0 +1,141 @@
+*, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  overflow: hidden;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background: rgb(214, 90, 90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, .7);
+  border-radius: 8px;
+  color: white;
+  font-size: 32px;
+  padding: 20px 60px;
+  z-index: 100;
+}
+
+.headline {
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.h-copy {
+  color: red;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+.timer {
+  padding: 10px 20px;
+  background-color: rgba(241, 18, 18, 0.572);
+  border-radius: 16px;
+}
+
+
+#not:hover {
+  opacity: 0;
+}
+
+.op0 {
+  opacity: 0;
+}
+
+#sdd {
+  cursor: pointer;
+}
+
+#sdd:hover {
+  transition: .2s;
+  background: rgba(241, 18, 18, 0.572);
+  color: white;
+}
+
+.btn-group {  
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+button {
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  /* background: rgba(241, 18, 18, 0.572); */
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.saudade {
+  color: white;
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+  font-size: 400px;
+  white-space: nowrap;
+}
+
+.saudade-1 {
+  color: white;
+  position: absolute;
+  font-size: 32px;
+  top: 90%;
+  width: 100vw;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.saudade-2 {
+  color: white;
+  position: absolute;
+  width: 100vw;
+  text-align: center;
+  font-size: 32px;
+  transform: translateY(-50%);
+  top: 10%;
+}
+
+.animation {
+  -webkit-animation: rightThenLeft 5s linear;
+}
+
+@-webkit-keyframes rightThenLeft {
+  0%   {left: 100%;}
+  100% {left: -6000px;}
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 0 10px;
+  }
+}
